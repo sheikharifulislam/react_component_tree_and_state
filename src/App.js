@@ -1,16 +1,14 @@
-import Layout from "./components/layout/Layout";
+import { Router } from "@reach/router";
+import About from "./pages/About";
+import Help from "./pages/Help";
+import Home from "./pages/Home";
 function App() {
     return (
-        <Layout>
-            <h1>Hello World</h1>
-            <h1>Hello React</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis cum deserunt voluptatum ad. Aspernatur asperiores
-                tenetur praesentium distinctio, dolores, odit cumque facere
-                fugit, debitis saepe ratione accusantium iure aut adipisci!
-            </p>
-        </Layout>
+        <Router>
+            <Home path="/" />
+            <Help path="help" />
+            <About path="about" />
+        </Router>
     );
 }
 

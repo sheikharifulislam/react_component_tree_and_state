@@ -28,3 +28,14 @@
     color: #fff;
     padding: 2rem 4rem;
 }
+
+.navItem {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navItemActive {
+    color: purple;
+    text-decoration: underline;
+    font-weight: bold;
+}
