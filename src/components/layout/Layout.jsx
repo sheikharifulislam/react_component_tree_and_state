@@ -47,6 +47,18 @@ const Layout = ({ children }) => {
                                 About
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                to="/clock"
+                                className={
+                                    path === "/help"
+                                        ? classes.navItemActive
+                                        : classes.navItem
+                                }
+                            >
+                                Clock
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
